@@ -13,92 +13,92 @@
 <body>
     <!-- display none no bootstrap: d-none -->
     <main class="d-flex justify-content-center align-items-center" style="height: 100vh;" id="content">
-        <form action="" id="debitForm" class="p-4 bg-info border rounded-5" style="width: 400px;">
-            <h1 class="title">I-debit</h1>
+        <form action="" id="debitForm" class="p-4 bg-warning border rounded-5" style="width: 400px;">
+            <h1 class="title">I-débito</h1>
             <p class="mb-0" style="font-weight: bold;">Bem vindo ao I-debit </p>
-            <p>Vamos calular o débito do cooperado!</p>
+            <p>Vamos calcular o débito do cooperado!</p>
             <label for="client">Nome do Cooperado:</label>
-            <input type="text"  class="form-control mb-3"id="client">
+            <input type="text"  class="form-control mb-3"id="client" required>
             <label for="carId">Placa:</label>
             <input type="text" class="form-control mb-3" id="carId">
             <label for="fee">Mensalidade:</label>
-            <select class="form-select mb-3" id="fee">
+            <select class="form-select mb-3" id="fee" required>
                         <option selected>Escolha a faixa de valor de mensalidade</option>
-                        <option value="1">R$ 124,00</option>
-                        <option value="2">R$ 144,00</option>
-                        <option value="3">R$ 164,00</option>
-                        <option value="4">R$ 184,00</option>
-                        <option value="5">R$ 204,00</option>
-                        <option value="6">R$ 224,00</option>
-                        <option value="7">R$ 244,00</option>
-                        <option value="8">R$ 264,00</option>
-                        <option value="9">R$ 284,00</option>
-                        <option value="10">R$ 304,00</option>
-                        <option value="11">R$ 324,00</option>
-                        <option value="12">R$ 344,00</option>
-                        <option value="13">R$ 364,00</option>
-                        <option value="14">R$ 384,00</option>
-                        <option value="15">R$ 404,00</option>
-                        <option value="16">R$ 424,00</option>
-                        <option value="17">R$ 444,00</option>
-                        <option value="18">R$ 464,00</option>
-                        <option value="19">R$ 484,00</option>
-                        <option value="20">R$ 504,00</option>
-                        <option value="21">R$ 516,00</option>                    
+                        <option value="124.00">R$ 124,00</option>
+                        <option value="144.00">R$ 144,00</option>
+                        <option value="164.00">R$ 164,00</option>
+                        <option value="184.00">R$ 184,00</option>
+                        <option value="204.00">R$ 204,00</option>
+                        <option value="224.00">R$ 224,00</option>
+                        <option value="244.00">R$ 244,00</option>
+                        <option value="264.00">R$ 264,00</option>
+                        <option value="284.00">R$ 284,00</option>
+                        <option value="304.00">R$ 304,00</option>
+                        <option value="324.00">R$ 324,00</option>
+                        <option value="344.00">R$ 344,00</option>
+                        <option value="364.00">R$ 364,00</option>
+                        <option value="384.00">R$ 384,00</option>
+                        <option value="404.00">R$ 404,00</option>
+                        <option value="424.00">R$ 424,00</option>
+                        <option value="444.00">R$ 444,00</option>
+                        <option value="464.00">R$ 464,00</option>
+                        <option value="484.00">R$ 484,00</option>
+                        <option value="504.00">R$ 504,00</option>
+                        <option value="516.00">R$ 516,00</option>
+                               
             </select>
             <label for="days">Dias Inadimplente:</label>
-            <input type="number"class="form-control"  id="days">
+            <input type="number"class="form-control"  id="days" required>
             <h2>Referências</h2>
                 <label for="month">Mês</label>
-                <select class="form-select mb-3" id="month">
-                    <option value="1">Janeiro</option>
-                    <option value="2">Fevereiro</option>
-                    <option value="3">Março</option>
-                    <option value="4">Abril</option>
-                    <option value="5">Maio</option>
-                    <option value="6">Junho</option>
-                    <option value="7">Julho</option>
-                    <option value="8">Agosto</option>
-                    <option value="9">Setembro</option>
-                    <option value="10">Outubro</option>
-                    <option value="11">Novembro</option>
-                    <option value="12">Dezembro</option>
+                <select class="form-select mb-3" id="month" required>
+                    <option>Janeiro</option>
+                    <option>Fevereiro</option>
+                    <option>Março</option>
+                    <option>Abril</option>
+                    <option>Maio</option>
+                    <option>Junho</option>
+                    <option>Julho</option>
+                    <option>Agosto</option>
+                    <option>Setembro</option>
+                    <option>Outubro</option>
+                    <option>Novembro</option>
+                    <option>Dezembro</option>
                 </select>
                     <label for="year">Ano</label>
-                    <select class="form-select mb-3" id="year">
+                    <select class="form-select mb-3" id="year" required>
                         <option value="none" selected >Selecione um Ano</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>                    
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>                    
                     </select>
-                <div class="submitContainer mb-4">
-                    <button type="button" class="btn btn-light" style="font-weight:600">calcular</button>
-                    <a class="btn btn-secondary" style="background-color: rgb(124, 124, 124);" >Limpar</a>
+                <div class="submitContainer mb-4"Id ="loaderArea">
+                    <button type="button" class="btn btn-light" style="font-weight:600" id="calculate">calcular</button>
+                    <a class="btn btn-secondary" style="background-color: rgb(124, 124, 124);" id="clean" >Limpar</a>
 
                 </div>
         </form>
     </main>
-    <div class="d-flex justify-content-center align-items-center d-none" style="height: 100vh;">
-        <div class="bg-info rounded-5" style="max-width: 500px; padding: 20px;">
-            <div class="bg-info text-left " style="max-width: 500px; padding: 20px;">
-                <p id="returnText" class="p-3 rounded-2" style="background-color: azure;">vazio</p>
+    <div class="d-flex justify-content-center align-items-center d-none" style="height: 100vh;" id="return">
+        <div class="bg-warning rounded-5 d-flex justify-content-center align-items-center" style="width: 500px; padding: 20px;" >
+            <div class="bg-warning text-left  " style="width: 100%; padding: 20px;">
+                <p id="returnText" class="p-3 rounded-2" style="background-color: rgb(245, 241, 226);"></p>
 
-                <button type="button" class="btn btn-light btn-sm text-end d-flex  justify-content-center gap-2 align-items-center " >Copiar Texto <i class="fa-solid fa-copy"></i></button>
-
+                <button type="button" class="btn btn-light btn-sm text-end d-flex  justify-content-center gap-2 align-items-center " style="margin-bottom:1rem ;"  id="copy">Copiar Texto <i class="fa-solid fa-copy"></i></button>
+                
                 <div class="d-grid gap-2 col-6 mx-auto mt-5">
-                    <button class="btn btn-outline-dark" type="button">Novo Débito</button>
+                    <button class="btn btn-outline-dark" type="button" id="refresh">Novo Débito</button>
                 </div>
             </div>
         </div>
-        
-
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
