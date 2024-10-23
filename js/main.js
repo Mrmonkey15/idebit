@@ -44,7 +44,7 @@
             mainContainer.classList.add('d-none');
             returnContainer.classList.remove('d-none');
 
-            returnTxt.textContent = `O débito no valor de R$ ${totalDebit} refere-se a ${debtDays} dias de cobertura, referente ao período entre ${referenceMonth} e ${lastMonth} de ${referenceYear} do veículo placa ${carId}. Lembramos que nossa cobertura é pós-paga, ou seja, você utiliza primeiro e realiza o pagamento depois. Estamos oferecendo 50% de desconto para a quitação do débito, reduzindo o valor para R$ ${afterDiscount}. Tem interesse em um acordo?`;
+            returnTxt.textContent = `O débito no valor de *R$ ${totalDebit}*, refere-se a ${debtDays} dias de cobertura, durante ao período entre *${referenceMonth} e ${lastMonth.trim()} de ${referenceYear.trim()}* do veículo placa *${carId.trim()}*. Lembramos que nossa cobertura é pós-paga, ou seja, você *utiliza primeiro o serviço e realiza o pagamento depois*. Estamos oferecendo *50% de desconto* para a quitação do débito, reduzindo o valor para *R$ ${afterDiscount}*. Tem interesse em um acordo?`;
 
             loaderArea.innerHTML = ''; 
             calculateBtn.classList.remove('d-none');
